@@ -1,0 +1,79 @@
+header {
+    background-color: black;
+    padding: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    perspective: 1000px;
+
+    background-image: url('uuu.jpg');
+
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.service {
+    width: calc(50% - 40px);
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: card-entry 0.5s ease-out forwards;
+    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service:nth-child(even) {
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+@keyframes card-entry {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+}
+
+footer p {
+    font-size: 14px;
+    color: #888;
+}
